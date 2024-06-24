@@ -4,6 +4,10 @@ public class Doctor extends Person {
     private String titulo;
     private int expYear;
     
+    public Doctor(){
+        super();
+    }
+
     public Doctor(String titulo, int expYear) {
         this.titulo = titulo;
         this.expYear = expYear;

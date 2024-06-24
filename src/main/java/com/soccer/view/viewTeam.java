@@ -20,18 +20,19 @@ public class viewTeam {
             System.out.println("6. Salir");
             int choice = scanner.nextInt();
             scanner.nextLine(); // Consume newline
+            System.out.println("Digite su elección: ");
 
             switch (choice) {
                 case 1:
-                        Team equipo = new Team();
-                        String codigoEquipo = null;
-                        System.out.println("Ingrese el codigo del equipo :");
-                        codigoEquipo = scanner.nextLine();
-                        System.out.println("Ingrese Nombre del equipo :");
-                        equipo.setNombre(scanner.nextLine());
-                        System.out.println("Ingrese la ciudad :");
-                        equipo.setCiudad(scanner.nextLine());
-                        controlador.equipos.put(codigoEquipo, equipo);
+                    Team equipo = new Team();
+                    String codigoEquipo = null;
+                    System.out.println("Ingrese el codigo del equipo :");
+                    codigoEquipo = scanner.nextLine();
+                    System.out.println("Ingrese Nombre del equipo :");
+                    equipo.setNombre(scanner.nextLine());
+                    System.out.println("Ingrese la ciudad :");
+                    equipo.setCiudad(scanner.nextLine());
+                    controlador.equipos.put(codigoEquipo, equipo);
                     break;
 
                 case 2:
@@ -86,7 +87,7 @@ public class viewTeam {
 
                 default:
                     System.out.println("Opcion invalida, intentelo de nuevo.");
-            }
+            }   
         }
     }
 }
